@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 数据的数据信息 -->
+		<meta charset="utf-8">
+		<title>HTML 标签</title>
+		<!-- 规定页面上所有链接的默认 URL 和默认目标 -->
+		<base href="../wallpaper/" target="_blank" />
+		<style type="text/css">
+			#myCanvas {
+				background-color: #c2cece;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="https://www.runoob.com/html/html-tag-name.html">菜鸟教程HTML标签</a>
+		<!-- 缩写词 -->
+		<abbr title="Hello World">HW</abbr>
+		<!-- 首字母的缩写词 -->
+		<acronym title="World Wide Web">WWW</acronym>
+		<!-- 地址 -->
+		<address>提示：<address> 元素通常连同其他信息被包含在 <footer> 元素中。</address>
+			<!-- 定义图像映射内部的区域 ，嵌套在<map>标签内部-->
+			<area shape="" coords="" href="" alt="">
+			<!-- 定义独立的内容 -->
+			<article>
+				<p>论坛帖子</p>
+				<p>博客文章</p>
+				<p>新闻故事</p>
+				<p>评论</p>
+			</article>
+			<!-- 内容应该与附近的内容相关 -->
+			<aside>
+				hello world
+			</aside>
+			<!-- 定义声音，比如音乐或其他音频流  文件格式：MP3、Wav、 Ogg -->
+			<audio src="horse.mp3" preload="auto" muted loop controls autoplay></audio>
+			<!-- 加粗文本 -->
+			<b>hello world</b>
+			<!-- 配合<base />标签的实现 -->
+			<img src="bg1.jpg">
+			<!-- 脱离父元素文本方向的设置 -->
+			<bdi>hello world</bdi>
+			<!-- 覆盖默认的文本方向 dir 规定元素内的文本方向 -->
+			<bdo dir="rtl">hello world</bdo>
+			<!-- 摘自另一个源的块引用  cite 引用源-->
+			<blockquote cite="">
+				hello world
+			</blockquote>
+			<!-- 换行符 -->
+			<br>
+			<button>我是按钮</button>
+			<!-- 画布 -->
+			<canvas id="myCanvas" width="500px" height="100px"></canvas>
+			<script>
+				var c = document.getElementById('myCanvas');
+				var ctx = c.getContext('2d');
+				ctx.fillStyle = '#61d1ca';
+				for (let i = 0; i < 5; i++) {
+					ctx.fillRect(10 + (90 * i), 10, 80, 80);
+				}
+			</script>
+			<!-- 定义表格的标题 -->
+			<caption>hello world</caption>
+			<!-- 定义作品的标题 -->
+			<cite>hello world</cite>
+			<!-- 定义代码文本 -->
+			<code>console.log('hello world')</code>
+			<!-- 对表格中的列进行组合，便于进行格式化和样式设置 -->
+			<colgroup>
+				<col span="2" style="background-color: antiquewhite;">
+				<col style="background-color: aquamarine;">
+			</colgroup>
+			<!-- 规定<input>元素可能的选项列表 -->
+			<input type="text" list="browsers">
+			<datalist id="browsers">
+				<option value="Internet Explorer">
+				<option value="Firefox">
+				<option value="Chrome">
+				<option value="Opera">
+				<option value="Safari">
+			</datalist>
+			<!-- 描述列表中的项目/名字 -->
+			<dl>
+				<dt>项目名称</dt>
+				<dd>项目描述</dd>
+			</dl>
+			<!-- 定义文档中已删除文本 -->
+			<del>hello world</del>
+			<!-- 用户可见或隐藏的需求的补充细节 -->
+			<!-- summary 为<details> 元素定义一个可见的标题 -->
+			<details>
+				<summary>
+					点击我
+				</summary>
+				<p>hello world</p>
+				<p>看到我了</p>
+			</details>
+			<!-- 短语标签，定义项目 -->
+			<dfn>123123</dfn>
+			<!-- 定义一个对话框、确认框或窗口 -->
+			<dialog open>hello world</dialog>
+			<div>div</div>
+			<!-- 短语标签，强调文本 -->
+			<em>123123</em>
+			<!-- 定义一个容器，用来嵌入外部应用或者互动程序（插件） -->
+			<embed src="bg2.jpg" type="image/jpg" width="600" height="500">
+			<!-- 将表单内的相关元素分组 -->
+			<fieldset>
+				<legend>hello world</legend>
+				<p>123</p>
+			</fieldset>
+			<!-- 独立的流内容 -->
+			<figure>
+				<img src="../wallpaper/bg3.jpg" alt="">
+				<figcaption>这是一张好看的图.</figcaption>
+			</figure>
+			<!-- 定义文档或文档的一部分区域的页脚 -->
+			<footer>
+				hello world
+			</footer>
+			<form action="" method="">
+
+			</form>
+			<head></head>
+			<!-- 文档或文档的一部分区域的页眉 -->
+			<header>
+				hello world
+			</header>
+			<!-- 对标题进行分组 -->
+			<hgroup>
+				<h1>hello</h1>
+				<h2>world</h2>
+			</hgroup>
+			<h1>标题1</h1>
+			<h2>标题2</h2>
+			<h3>标题3</h3>
+			<h4>标题4</h4>
+			<h5>标题5</h5>
+			<h6>标题6</h6>
+			<!-- 水平线 -->
+			<hr>
+			<!-- 斜体 -->
+			<i>hello world</i>
+			<!-- 内联框架 -->
+			<iframe src="bg4.jpg" width="600" height="300" seamless></iframe>
+			<input type="text" id="male">
+			<!-- 已插入文档中的文本 -->
+			<ins>hello world</ins>
+			<!-- 为 input 元素定义标注 -->
+			<label for="male">Male</label>
+			<ul>
+				<li>hello world</li>
+			</ul>
+			<!-- 定义文档与外部资源的关系 -->
+			<link rel="stylesheet" href="">
+			<!-- 指定文档的主体部分 -->
+			<main>
+				hello world
+			</main>
+			<img src="../wallpaper/bg5.jpg" usemap="#planetmap">
+			<!-- 客户端图像映射，带有可点击区域的一幅图像 -->
+			<map name="planetmap">
+				<area shape="circle" coords="240,60,20" href="bg6.jpg" alt="">
+				<area shape="circle" coords="280,100,20" href="bg7.jpg" alt="">
+			</map>
+			<!-- 带有记号的文本 -->
+			<mark>hello world</mark>
+			<!-- 度量衡，仅用于已知最大和最小值的度量 -->
+			<meter value="2" max="10" min="0"></meter>
+			<meter value="0.6"></meter>
+			<!-- 导航链接 -->
+			<nav>
+				<a href="bg6.jpg">bg6</a>
+				<a href="bg7.jpg">bg7</a>
+				<a href="bg8.jpg">bg8</a>
+			</nav>
+			<!-- 用来定义脚本在未来被执行时的替代内容（文本） -->
+			<noscript>抱歉，您的浏览器不支持 JavaScript!</noscript>
+			<!-- 定义一个嵌入对象 -->
+			<object data="bg8.jpg"></object>
+			<ol>
+				<li>123</li>
+				<li>123</li>
+				<li>123</li>
+			</ol>
+			<!-- optgroup将相关的选项组合在一起 -->
+			<!-- option定义下拉列表中的一个选项 -->
+			<select>
+				<optgroup label="Swedish Cars">
+					<option value="volvo">volvo</option>
+					<option value="saab">saab</option>
+				</optgroup>
+				<optgroup label="German Cars">
+					<option value="mercedes">mercedes</option>
+					<option value="audi">audi</option>
+				</optgroup>
+			</select>
+			<!-- output 计算结果输出显示 -->
+			<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+				0 <input type="range" value="50" id="a">
+				100 <input type="number" value="50" id="b">
+				= <output name="x" for="a b"></output>
+			</form>
+			<p>hello world</p>
+			<!-- 允许为插入 XHTML 文档的对象规定 run-time 设置 -->
+			<param name="" value="">
+			<!-- 定义预格式化的文本 -->
+			<pre>
+				Hello
+				world
+				123123
+			</pre>
+			<!-- 允许我们在不同的设备上显示不同的图片 -->
+			<picture>
+				<source srcset="bg1.jpg" media="(min-width: 650px)">
+				<source srcset="bg2.jpg" media="(min-width: 450px)">
+				<img src="bg3.jpg" >
+			</picture>
+			<!-- 定义运行中的任务进度（进程） -->
+			<progress value="22" max="100"></progress>
+			<!-- 标记一个短的引用 -->
+			<q>123123123</q>
+			<!-- <rp>标签在ruby注释中使用 -->
+			<!-- <rt>标签定义字符的（中文注音或字符）的解释或发音 -->
+			<ruby>
+				汉<rp>(</rp><rt>han</rt><rp>)</rp>
+				字<rp>(</rp><rt>zi</rt><rp>)</rp>
+			</ruby>
+			<!-- 标记不正确、不准确或者没有用的文本进行标记 -->
+			<s>hello world</s>
+			<!-- 定义计算机程序的样本文本 -->
+			<samp>计算机样本</samp>
+			<!-- 定义文档的某个区域 -->
+			<section>
+				<h1>hello</h1>
+				<p>world</p>
+			</section>
+			<!-- 定义小型文本 -->
+			<small>hello world</small>
+			<!-- 定义媒体资源 ，规定两个视频/音频文件共浏览器根据它对媒体类型或者编解码器的支持进行选择-->
+			<audio controls>
+				<source src="" type="audio/mp3">
+			</audio>
+			<span>hello world</span>
+			<!-- 加粗文本 -->
+			<strong>hello world</strong>
+			<style></style>
+			<!-- 下标文本 -->
+			<sub>hello world</sub>
+			<!-- 上标文本 -->
+			<sup>hello world</sup>
+			<table>
+				<thead>
+					<tr>
+						<th>789</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>456</td>
+					</tr>	
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>123</td>
+					</tr>	
+				</tfoot>
+			</table>
+			<textarea rows="10" cols="30"></textarea>
+			<time datetime="2022-07-07">情人节</time>
+			<title>hello world</title>
+			<!-- 为媒体元素规定外部文本轨道，也就是字幕 -->
+			<video src="1.mp4" width="600" height="500" controls>
+				<track default kind="captions" srclang="en" src="bg4.jpg"/>
+			</video>
+			<!-- 下划线文本 -->
+			<u>hello world</u>
+			<!-- 定义变量，可以将此标签和 <pre> 及 <code> 标签配合使用 -->
+			<var>变量</var>
+			<video src=""></video>
+			<!-- 规定在文本中的何处适合添加换行符 -->
+			<wbr>
+	</body>
+</html>
